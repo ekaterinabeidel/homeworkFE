@@ -1,0 +1,147 @@
+/*Замечания: 
+1. не выполнила прорверку на одинаковые свойства разных элементов, 
+что помогло бы уменьшить число строк;
+2. к кнопкам не приклеплены ссылки;
+3. как правильно загрузить шрифт в CSS?
+4. обращения к селекторам выполнены только по тегу и по классу. 
+Как правильно обращаться к селектору по атрибуту?
+5. Как избавиться от серого фона у крестика сверху?  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    
+}
+html {
+    margin: auto;
+}
+section {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 32px 0px rgba(96, 97, 112, 0.24);
+    padding: 16px;
+    border-radius: 20px;
+    margin: 20px;
+    width: 420px;
+    height: 426px;
+    top: -213px;
+    left: -761px;
+}
+.closeFormBox {
+    display: flex;
+    height: 24px;
+    padding-left: 364px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    border: 0;
+    background-color: white;
+   
+}
+.closeFormIcon {
+    background-image: url(./ic-close.svg);
+    width: 24px;
+    height: 24px;
+    
+}
+.content {
+    display: flex;
+    padding: 0px 16px 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+h2 {
+    font-family: 'Nunito', sans-serif;
+    line-height: 32px;
+    font-weight: 800;
+    text-align: left;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.email:focus {
+    border: 1px solid  #FFE44D;
+    caret-color:#FFE44D;
+}
+.email {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    padding: 7px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid #CFD8DC;
+    height: 48px;
+}
+.password {
+    display: flex;
+    padding: 14px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid #CFD8DC;
+    background: #FFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    height: 48px;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(123, 142, 152, 1);
+    align-self: stretch;
+    line-height: 14px;
+    
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.buttonSignUp {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 55px;
+    background: var(--Primary-Main-Color, #FFE44D);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+}
+.buttonSignIn {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 87px;
+    border: 1px solid var(--Text-Outline, #CFD8DC);
+    background: white;
+    color:  #1A1A1A;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+}
